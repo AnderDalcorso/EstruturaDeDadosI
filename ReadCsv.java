@@ -41,13 +41,13 @@ public class ReadCsv {
 
                 Data data = new Data();
 
-                data.setScore_phrase(ln[1]);
-                data.setTitle(ln[2]);
-                data.setPlataform(ln[4]);
-                data.setScore(Double.parseDouble(ln[5]));
-                data.setGenre(ln[6]);
-                data.setEditors_choice(ln[7]);
-                data.setRelease_year(ln[8]);
+                data.setScore_phrase(ln[3]);
+                data.setTitle(ln[1]);
+                data.setPlataform(ln[2]);
+                data.setScore(Double.parseDouble(ln[4]));
+                data.setGenre(ln[5]);
+                data.setEditors_choice(ln[6]);
+                data.setRelease_year(ln[7]);
 
                 if (!map.containsKey(data.getRelease_year())) {
                     map.put(data.getRelease_year(), new ArrayList<>());
